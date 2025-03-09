@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Экзамены до 1 мая</title>
+    <title>Планировщик экзаменов</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Сдать все экзамены нужно сдать до 1 мая</h1>
+        <h1>Планировщик экзаменов</h1>
         <p id="todayDate"></p>
-        <p id="daysLeft"></p>
 
+        <label for="examDate">Дата последнего экзамена:</label>
+        <input type="date" id="examDate" required>
+        
         <label for="examsLeft">Количество оставшихся экзаменов:</label>
-        <input type="number" id="examsLeft" min="1">
+        <input type="number" id="examsLeft" min="1" required>
+        
         <button onclick="calculate()">Рассчитать</button>
 
         <p id="result"></p>
